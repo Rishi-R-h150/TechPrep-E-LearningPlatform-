@@ -1,0 +1,126 @@
+/* General styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+.dsa-portal {
+    padding: 20px;
+}
+
+.dsa-portal-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Increased for better visibility */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Table styles */
+.dsa-table {
+    width: 100%;
+    max-width: 800px; /* Restrict width for better readability */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.dsa-table-header {
+    text-align: left;
+    padding: 12px; /* Slightly larger padding */
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    letter-spacing: 0.5px; /* Improves readability */
+}
+
+/* Topic row styles */
+.dsa-topic-row {
+    cursor: pointer;
+    background-color: #1e1e1e;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dsa-topic-row:hover {
+    background-color: #333333;
+    transform: scale(1.02);
+}
+
+.dsa-topic-row td {
+    padding: 15px; /* Matches the consistent padding */
+    border-bottom: 1px solid #333;
+    font-size: 16px; /* Larger font size for better readability */
+    color: #ffffff;
+}
+
+.dsa-topic-row.expanded {
+    background-color: #2a2a2a;
+}
+
+/* Problems list styles */
+.dsa-problems-row td {
+    padding: 12px; /* Matches consistent padding with slightly reduced size */
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+.dsa-problems-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.dsa-problem-item {
+    margin-bottom: 8px;
+}
+
+.dsa-problem-link {
+    text-decoration: none;
+    color: #1e90ff; /* Light blue link color */
+    font-size: 16px;
+}
+
+.dsa-problem-link:hover {
+    color: #00bfff; /* Bright blue on hover */
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .dsa-portal {
+        padding: 10px;
+    }
+
+    .dsa-table {
+        font-size: 14px; /* Slightly reduced font size for smaller screens */
+    }
+
+    .dsa-topic-row td,
+    .dsa-problems-row td {
+        padding: 10px; /* Adjust padding for compact view */
+    }
+
+    .dsa-portal-title {
+        font-size: 24px; /* Adjusted title size for mobile screens */
+    }
+}

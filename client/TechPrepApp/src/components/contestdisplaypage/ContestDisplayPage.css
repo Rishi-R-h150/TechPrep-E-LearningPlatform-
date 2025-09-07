@@ -1,0 +1,123 @@
+.outer-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.contest-card { 
+    flex : 0 1 calc(30% -20px);
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+   
+}
+
+.contest-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+   
+  }
+  
+  .contest-card p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+   
+  }
+
+  .contest-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease;
+  }
+  
+  .join-button {
+    display: inline-block;
+    padding: 0.8em 1.5em; 
+    margin: 0 0.5em;
+    font-size: 1.2em; 
+    font-weight: 600; 
+    color: white;
+    background-color: #1a1a1a; 
+    border: 1px solid transparent;
+    border-radius: 30px; 
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  }
+
+.closed-message{
+    color:red;
+    font-weight: bold;
+}
+
+
+.modal {
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 100vh; /* Full screen height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Center modal horizontally */
+  align-items: center; /* Center modal vertically */
+  z-index: 1000; /* Make sure it appears above other elements */
+}
+
+.modal-content {
+  background: rgb(206, 200, 200);
+  width: 30%; /* Adjust width as desired */
+  height: 30%; /* Adjust height dynamically */
+  min-height: 200px; /* Ensures the modal looks big */
+  padding: 30px; /* Adds spacing inside the modal */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center;
+  justify-content: space-between; /* Space between elements */
+}
+
+.input-text {
+  width: 80%; /* Adjust the input size */
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Adds spacing between buttons */
+  justify-content: center; /* Centers the buttons */
+}
+
+.butT, .butF {
+  padding: 10px 20px; /* Make buttons bigger */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.butT {
+  background-color: #4caf50; /* Green for submit */
+  color: white;
+}
+
+.butF {
+  background-color: #f44336; /* Red for cancel */
+  color: white;
+}
+.model-text{
+  color:#1a1a1a;
+}
